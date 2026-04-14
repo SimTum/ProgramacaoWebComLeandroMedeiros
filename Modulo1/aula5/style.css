@@ -1,0 +1,61 @@
+body{
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 240, 255);
+}
+
+header {
+    color: crimson;
+}
+
+a{
+    color: chartreuse;
+}
+
+
+title {
+    padding: 15px;
+    margin: 20px;
+    color: brown;
+}
+
+.table {
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS';
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    width: 100%;
+}
+
+
+.table th {
+    font-size: 40px;
+}
+
+.table td {
+    font-family: 'Arial Narrow';
+    font-size: 22px;
+    border: 1px groove black ;
+    background-color: aqua;
+    transition: 0.6s;
+    width: 40px;
+    height: 20px;
+}
+
+.table a{
+    transition: 0.5s;
+}
+
+.table td:hover{
+    background-color: burlywood;
+    scale: 3;
+}
+.table a:hover {
+    color: red;
+    scale: 2;
+}
+
+
