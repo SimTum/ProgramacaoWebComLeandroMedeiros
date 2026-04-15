@@ -1,8 +1,20 @@
+
+:root{
+    --color-bg1: #027373;
+    --color-bg2: #ADD9D1;
+    --color-bg3: #038C7F;
+    --color1: #D95252;
+    --color2: #0D0D0D;
+
+    
+}
+
 body{
     align-items: center;
     justify-content: center;
-    background-color: rgb(247, 240, 255);
+    background-color:var(--color-bg1);
 }
+
 
 * {
      box-sizing: border-box; 
@@ -10,41 +22,43 @@ body{
 .main-box{
     margin: 0 auto;
     border: 1px solid purple 10px;
-    background-color: blueviolet;
-    color: blanchedalmond;
+    background-color: var(--color-bg1);
+    color: var(--color2);
     font-family: Impact;
 }
 
 .sub-section{
-    background-color: darkgray;
+    background-color: var(--color-bg2);
     border-radius: 20px;
     padding: 20px;
     margin: 40px;
     display: inline-block;
+    border-width: 5px;
 }
 
 header {
-    color: crimson;
+    color: var(--color1);
+
 }
 
 a{
-    color: chartreuse;
+    color:var(--color2);
 }
 
 
 title {
     padding: 15px;
     margin: 20px;
-    color: brown;
+
 }
 
 .table {
     padding: 20px;
     border-radius: 20px;
     font-family: 'Trebuchet MS';
-    background-color: aliceblue;
-    border-style: solid;
-    border-color: black;
+    background-color: var(--color-bg4);
+    border-style: none;
+    border-color: var(--color2);
     border-width: 5px;
     width: 100%;
 }
@@ -52,19 +66,20 @@ title {
 
 .table th {
     font-size: 40px;
+    border: 2px solid black;
+    padding: 15px;
 }
 
 .table td {
     font-family: 'Arial Narrow';
     font-size: 22px;
     border: 1px groove black ;
-    background-color: aqua;
     transition: 0.6s;
     width: 40px;
     height: 20px;
 }
 
-.table a{
+a{
     transition: 0.5s;
 }
 
@@ -72,7 +87,7 @@ title {
     background-color: burlywood;
     scale: 3;
 }
-.table a:hover {
+a:hover {
     color: red;
     scale: 2;
 }
@@ -81,7 +96,7 @@ title {
     position: fixed;
     font-size: 5px;
     font-family: 'Courier New';
-    background-color: blue;
+    background-color: var(--color-bg3) ;
     width: 100%;
 }
 
@@ -89,4 +104,36 @@ title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.hero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-bg2);
+    
+}
+
+.sidebar{
+    background-color: var(--color-bg2);
+    flex: 250px 0 0x;
+}
+
+.conteudo{
+    flex: 1;
 }
