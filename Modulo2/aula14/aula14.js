@@ -32,7 +32,7 @@ filterButton.addEventListener('click', () => {
         if (card.querySelector('.category').innerHTML.trim() !== "lanches")
         {
             card.classList.toggle("hidden");
-        }
+        } 
         
     });  
     
