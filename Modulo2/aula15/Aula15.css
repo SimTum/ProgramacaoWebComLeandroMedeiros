@@ -1,1 +1,20 @@
+.tarefinha {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+* {
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
 
+.crossed-out {
+    text-decoration: line-through solid black 2px;    
+}
+
+.hidden {
+    display: none;
+}
