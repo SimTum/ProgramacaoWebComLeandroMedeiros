@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula Fetch</title>
+    <link rel="stylesheet" href="./aula16.css">
 </head>
+
 <body>
+
     <h1>Aula 16</h1>
-    
-    <input type="text" name="pname" id="pname" placeholder="digite nome de um pokemon">
+    <form id="searchForm" action="post">
+        <label for="">Pokemon API call</label>
+        <input type="text" name="pname" id="pname" placeholder="digite nome de um pokemon">
+        <br>
+        <button id="searchButton" type="submit">Search</button>
+    </form>
+
+    <div id="collection" class="box">
+        <p class="card" id="nothingHere">Nothing here yet, try looking something up!</p>
+        <p class="card" id="loading">Loading</p>
+        <p class="card" id="nothingFound">Nothing was found, try looking something else up!</p>
+    </div>
+
+    <script src="./aula16.js"></script>
+
 </body>
+
 </html>
