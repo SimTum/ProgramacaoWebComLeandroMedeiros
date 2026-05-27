@@ -14,16 +14,17 @@
     <form id="searchForm" action="post">
         <label for="">Pokemon API call</label>
         <input type="text" name="pname" id="pname" placeholder="digite nome de um pokemon">
+        <button id="searchButton" type="submit">Search</button> 
         <br>
-        <button id="searchButton" type="submit">Search</button>
+        <p class="" id="nothingHere"> Try looking something up!</p>
+        <p class=" hidden" id="loading"> Loading ...</p>
+        <p class=" hidden" id="nothingFound"> Nothing was found, try looking something else up!</p>
     </form>
 
     <div id="collection" class="box">
-        <p class="card" id="nothingHere">Nothing here yet, try looking something up!</p>
-        <p class="card" id="loading">Loading</p>
-        <p class="card" id="nothingFound">Nothing was found, try looking something else up!</p>
+        
     </div>
-
+    
     <script src="./aula16.js"></script>
 
 </body>
